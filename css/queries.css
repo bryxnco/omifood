@@ -1,0 +1,365 @@
+/* 1rem = 1em = 16px (default) */
+
+/* ***********  ***********   */
+/* BELOW 1344px (smaller desktops) */
+/* ***********  ***********  */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .testimonials-container h2 {
+    margin-bottom: 4.8rem;
+    font-size: 3.6rem;
+  }
+
+  .container-grid {
+    grid-template-columns: 80fr 55fr;
+  }
+}
+
+/* ***********  ***********   */
+/* BELOW 1200px (Landscape Tablets) */
+/* ***********  ***********  */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 6.4rem;
+  }
+
+  .hero-img-box {
+    max-width: 80%;
+    place-self: center;
+  }
+
+  .navigation-list {
+    gap: 3.2rem;
+  }
+
+  .section-testimonials {
+    padding: 4.8rem 3.2rem 9.6rem 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 6.4rem;
+  }
+
+  .gallery-item {
+    grid-row: span 2;
+  }
+}
+
+/* ***********  ***********   */
+/* BELOW 944px (Tablets) */
+/* ***********  ***********  */
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    padding: 0 8rem;
+    text-align: center;
+  }
+
+  .box-customers {
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 60%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 6.2rem;
+  }
+
+  .container-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .testimonials {
+    gap: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan {
+    padding: 3.2rem;
+  }
+
+  .complete::after {
+    font-size: 1.2rem;
+    top: 3%;
+    right: -16%;
+  }
+
+  .meal-container {
+    padding: 2.4rem;
+  }
+
+  .main-navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(254, 251, 248);
+    margin-right: 2.4rem;
+    margin-top: 2.4rem;
+    border-radius: 18px;
+    transition: all 0.3s ease-in-out;
+    /* transform: translateX(110%); */
+
+    /* Allows NO transition */
+    /* display: none; */
+
+    /* Hide the element visually */
+    opacity: 0;
+
+    /* Make it unaccessible  */
+    pointer-events: none;
+
+    /* Hide it from screen readers */
+    visibility: hidden;
+
+    width: 45%;
+    padding-bottom: 4.8rem;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+
+    margin-top: 4.8rem;
+  }
+
+  .btn-nav-mobile {
+    display: block;
+  }
+
+  .nav-open .main-navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-nav-mobile[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-nav-mobile[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* ***********  ***********   */
+/* Below 720px (Samll Tablets) */
+/* ***********  ***********  */
+
+@media (max-width: 45em) {
+  .hero-img-box img {
+    max-width: 80%;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .btn--seccondary {
+    margin-top: 2.4rem;
+  }
+
+  .heading-secondary,
+  .testimonials-container h2 {
+    font-size: 3rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .testimonials {
+    padding: 0;
+  }
+
+  .gallery {
+    padding: 3.2rem 0;
+  }
+
+  .padd-mobile {
+    padding-bottom: 4.8rem;
+    padding-top: 4.8rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 5fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .nav-col {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .contacts {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-links {
+    margin-top: auto;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .footer-nav {
+    gap: 1.2rem;
+  }
+}
+
+/* ***********  ***********   */
+/* Below 528px (Samll Tablets) */
+/* ***********  ***********  */
+@media (max-width: 33em) {
+  .hero-text-box,
+  .hero-img-box {
+    padding: 0 2.4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    max-width: 80%;
+  }
+
+  .logos img {
+    height: 1.4rem;
+  }
+
+  .step-img-box {
+    transform: translateY(3.2rem);
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 30rem;
+    grid-row: 1;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* ***********  ***********   */
+/* Below 368px (Samll phones) */
+/* ***********  ***********  */
+@media (max-width: 23em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    padding: 0;
+  }
+
+  .main-navigation {
+    width: 45%;
+  }
+
+  .address-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-links {
+    margin-top: auto;
+  }
+}
